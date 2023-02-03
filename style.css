@@ -1,0 +1,64 @@
+body {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: #ddeedc;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+    font-size: x-large;
+    width: 50%;
+    padding-top: 120px;
+}
+.type-txt h4 {
+    font-family: monospace;
+    overflow: hidden;
+    border-right: 0.15em solid blue;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: blue;
+    }
+}
+.container img {
+    width: 50%;
+    height: auto;
+}
+.container .btn {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.container .btn:hover {
+    background-color: #9de694;
+    color: white;
+    font-weight: bold;
+}
